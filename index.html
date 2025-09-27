@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varthaman Agri Seeds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Nunito Sans', sans-serif;
+            
+            --color-dark-green: #064e3b;
+            --color-primary-green: #16a34a;
+            --color-light-bg: #f0fdf4;
+            --color-text-body: #374151;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-light-bg);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a7f3d0' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1887&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text-gradient {
+            background-image: linear-gradient(to right, var(--color-dark-green), var(--color-primary-green));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .custom-shadow { box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.1), 0 4px 6px -2px rgba(16, 185, 129, 0.05); }
+        .custom-shadow-lg { box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.1), 0 10px 10px -5px rgba(16, 185, 129, 0.04); }
+
+        .active-tab {
+            border-bottom: 3px solid var(--color-primary-green);
+            color: var(--color-primary-green);
+            font-weight: 700;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+             <!-- MODIFIED: Added ml-[-10px] to shift the logo link to the left -->
+            <a href="#" class="flex items-center space-x-3" style="margin-left: -10px;">
+                <img id="company-logo" src="https://placehold.co/40x40/cccccc/ffffff?text=L" alt="Company Logo" class="h-10 w-10">
+                <h1 id="company-name-header" class="text-2xl font-bold" style="color: var(--color-dark-green);">Varthaman Agri Seeds</h1>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-green-600 transition duration-300">About Us</a>
+                <a href="#products" class="text-gray-600 hover:text-green-600 transition duration-300">Our Products</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600 transition duration-300">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-green-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-green-600">About Us</a>
+            <a href="#products" class="block py-2 text-gray-600 hover:text-green-600">Our Products</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-green-600">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-4 fade-in-up" style="animation-delay: 0.2s;">Quality Seeds for a Bountiful Harvest</h2>
+            <p class="text-xl mb-8 fade-in-up" style="animation-delay: 0.4s;">Pioneering in high-yielding, resilient crop varieties for the modern farmer.</p>
+            <a href="#products" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 fade-in-up" style="animation-delay: 0.6s;">Explore Our Products</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16">
+        <!-- About Us Section -->
+        <section id="about" class="mb-20">
+            <!-- NEW STRUCTURE: Image is now a background with a dark overlay for text readability -->
+            <div class="relative rounded-lg custom-shadow-lg overflow-hidden bg-cover bg-center min-h-[450px] flex items-center justify-center text-center p-8" 
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1770&auto=format&fit=crop');">
+                
+                <div class="max-w-4xl">
+                    <h2 class="text-4xl font-bold mb-6 text-white">About Varthaman Agri Seeds</h2>
+                    <p id="about-us-content" class="text-lg leading-relaxed text-gray-200">Loading company profile...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">Our Products</h2>
+            <div class="flex justify-center flex-wrap border-b-2 border-gray-200" id="crop-tabs-container">
+                <!-- Crop category tabs generated here -->
+            </div>
+            <div id="crop-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Crop cards inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" style="background-color: var(--color-dark-green);" class="text-white mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 id="company-name-footer" class="text-xl font-bold mb-4">Varthaman Agri Seeds</h3>
+                    <p id="company-address" class="text-gray-300">Loading address...</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-300"><strong>Email:</strong> <a id="company-email" href="#" class="hover:underline">loading...</a></p>
+                    <p class="text-gray-300"><strong>Customer Care:</strong> <span id="company-phone">loading...</span></p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"/></svg></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.295 1.616 4.212 3.766 4.652-.69.188-1.432.233-2.18.084.608 1.935 2.372 3.337 4.464 3.375-1.749 1.373-3.952 2.186-6.342 2.186-.41 0-.814-.024-1.21-.072 2.27 1.456 4.973 2.302 7.873 2.302 9.478 0 14.656-7.855 14.656-14.655 0-.224-.005-.447-.015-.669.998-.724 1.863-1.623 2.56-2.659z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-600 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Varthaman Agri Seeds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
