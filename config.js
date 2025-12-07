@@ -1,8 +1,6 @@
 // This file contains configuration variables for the frontend.
-// In a real-world production environment, you would change the API_BASE_URL
-// to point to your live server. For local development, it points to your local backend.
+// Since this is now a static site, we don't need an API URL.
 
-const API_BASE_URL = 'https://varthamanagriseeds.onrender.com';
-
-const API_KEY = 'Varthaman_727d9e8e-1aae-48d8-bbed-1490b44cd524';
+const API_BASE_URL = ''; // Not used
+const API_KEY = ''; // Not used
 
