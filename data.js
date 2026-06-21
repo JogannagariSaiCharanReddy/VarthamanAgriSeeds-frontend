@@ -117,7 +117,7 @@ const STATIC_DATA = {
                 "name": "V.S Early Fine-120",
                 "details": [
                     "Plant height 115-120cm.",
-                    "Duration 130 days.",
+                    "Duration 100-105 days.",
                     "Short bold grains with straw color husk.",
                     "Tolerant to BPH and blast.",
                     "Wide adaptability.",
@@ -157,7 +157,7 @@ const STATIC_DATA = {
                 "name": "Sarovar-90 Bold",
                 "details": [
                     "Plant height 110-115cm.",
-                    "Duration 90-100 days.",
+                    "Duration 120-130 days.",
                     "Medium slender grains with straw colour husk.",
                     "Tolerant to BPH and blast.",
                     "Wide adaptability."
